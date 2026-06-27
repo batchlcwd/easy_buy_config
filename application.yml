@@ -6,9 +6,7 @@ eureka:
       defaultZone: ${EUREKA_ZONE:http://localhost:8761/eureka/}
 
 management:
-  metrics:
-	  tags:
-		 application: ${spring.application.name}
+ 
   endpoints:
     web:
       exposure:
