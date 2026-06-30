@@ -29,7 +29,7 @@ logging:
     name: logs/${spring.application.name}.log
   pattern:
     file: "%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] traceId=%X{trace_id} spanId=%X{span_id} %logger{36} : %msg%n"
-    console: "%d{HH:mm:ss} %-5level %logger{36} : %msg%n"
+    console: "%d{HH:mm:ss} %-5level traceId=%X{trace_id} spanId=%X{span_id} %logger{36} : %msg%n"
 
 
 PRODUCT_SERVICE_NAME: PRODUCT-SERVICE
